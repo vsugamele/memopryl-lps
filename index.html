@@ -20,19 +20,18 @@ p{font-size:14px;color:#9A9AA8;margin:0 0 22px;line-height:1.5}
 </style>
 <script>
 // Auto-redirect to the right LP based on subdomain
+// Apex domain (memo.purelabss.com) opens ml05 by default — ml06 still reachable via /ml06
 (function(){
   var host = window.location.hostname;
-  if (host.indexOf('ml05.') === 0) {
-    if (window.location.pathname !== '/ml05') {
-      window.location.replace('/ml05');
-    }
-    return;
-  }
   if (host.indexOf('ml06.') === 0) {
     if (window.location.pathname !== '/ml06') {
       window.location.replace('/ml06');
     }
     return;
+  }
+  // ml05.* subdomain AND apex domain both go to /ml05
+  if (window.location.pathname !== '/ml05') {
+    window.location.replace('/ml05');
   }
 })();
 </script>
