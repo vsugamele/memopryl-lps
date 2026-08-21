@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MemoPryl LPs</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#0F1117;color:#FAFAF7;font-family:system-ui,-apple-system,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{max-width:520px;text-align:center}
+.kicker{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#E09A22;font-weight:800;margin-bottom:14px}
+h1{font-family:Georgia,serif;font-size:32px;line-height:1.15;font-weight:800;margin:0 0 8px;letter-spacing:-0.02em}
+h1 .accent{color:#E09A22}
+p{font-size:14px;color:#9A9AA8;margin:0 0 22px;line-height:1.5}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.link{display:block;background:#1A1D24;border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:24px 18px;text-decoration:none;color:#FAFAF7;transition:all .15s}
+.link:hover{background:#1F2330;border-color:#E09A22;transform:translateY(-2px);text-decoration:none}
+.link .label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#E09A22;font-weight:800;margin-bottom:6px}
+.link .name{font-family:Georgia,serif;font-size:28px;font-weight:800;color:#E09A22;margin-bottom:4px}
+</style>
+<script>
+// Auto-redirect to the right LP based on subdomain
+(function(){
+  var host = window.location.hostname;
+  if (host.indexOf('ml05.') === 0) {
+    if (window.location.pathname !== '/ml05') {
+      window.location.replace('/ml05');
+    }
+    return;
+  }
+  if (host.indexOf('ml06.') === 0) {
+    if (window.location.pathname !== '/ml06') {
+      window.location.replace('/ml06');
+    }
+    return;
+  }
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">MemoPryl · Standalone LPs</div>
+  <h1>Memory <span class="accent">Order</span> Pages</h1>
+  <p>Configure ml05.purelabs.com + ml06.purelabs.com in Vercel to serve each LP.</p>
+  <div class="links">
+    <a href="/ml05" class="link">
+      <div class="label">LP #1</div>
+      <div class="name">ml05</div>
+    </a>
+    <a href="/ml06" class="link">
+      <div class="label">LP #2</div>
+      <div class="name">ml06</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

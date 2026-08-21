@@ -1,0 +1,98 @@
+/* Enxugado para a ml05: as regras da grade de ofertas / selos / depoimentos
+   que viviam dentro do .esconder sairam junto com o markup. */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Nunito Sans", sans-serif;
+}
+
+main#container {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+header h1 {
+	font-weight: 400;
+	color: #fff;
+	margin: 0;
+	flex-grow: 1;
+	text-align: center;
+	font-size: 2rem;
+}
+
+header img {
+	width: 23px;
+}
+
+marquee {
+	background-color: #810505;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 4px 0;
+	font-weight: 400;
+	font-size: 11px;
+}
+
+.principal {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 5px 12px 15px;
+	text-align: center;
+}
+
+.cta {
+	text-decoration: none;
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.4rem 0.5rem;
+	text-transform: uppercase;
+	background: linear-gradient(0deg, var(--contrast-color), var(--button-color));
+	margin: 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: .3s;
+}
+
+@media screen and (max-width: 767px) {
+	.cta {
+			padding: 0.65em;
+			font-size: 1.15em;
+		}
+}
+
+footer {
+	background-color: #A70C0C;
+	padding: 15px 0 0;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	padding: 25px;
+	font-weight: 500;
+}
+
+footer h3 {
+	background-color: black;
+	color: white;
+	font-size: 17px;
+	padding: 10px 25px;
+}
+
+@media (max-width: 996px) {
+	.principal h1 {
+			font-size: 23px;
+		}
+
+	header h1 {
+			font-size: 1.7rem !important;
+		}
+}

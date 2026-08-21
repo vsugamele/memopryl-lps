@@ -1,0 +1,71 @@
+/* Enxugado para a ml05: as regras da grade de ofertas / selos / depoimentos
+   que viviam dentro do .esconder sairam junto com o markup. */
+
+:root {
+	--primary-color: #3d3d3d;
+	--secondary-color: #313131;
+	--third-color: #1F1F1F;
+	/* Verde médio para botões ou detalhes */
+	--fourth-color: #4e4e4e;
+	/* Verde mais claro e suave */
+	--primary-color-light: #686868;
+	/* Versão bem clara do primary */
+	--primary-color-dark: #0e1110;
+	/* Um verde quase preto */
+	--secondary-color-light: #1F1F1F;
+	/* Cinza esverdeado claro */
+	--secondary-color-dark: #1F1F1F;
+	/* Tom mais fechado do secondary */
+	--contrast-color: #E8F8C1;
+	/* Amarelo-esverdeado suave como destaque */
+	--text-color: #1C1F1D;
+	/* Quase preto, levemente esverdeado */
+	--light-color: #F5F7F6;
+	/* Quase branco com leve toque de verde */
+
+	--button-color: #3A8A56;
+	/* Verde vibrante, mas não neon */
+
+	--bonus-primary-color: #1F1F1F;
+	/* Verde oliva dourado */
+	--bonus-secondary-color: #303030;
+	/* Verde militar/amarelado */
+
+}
+
+#video {
+	position: relative;
+}
+
+@media(max-width: 991px) {
+	#video h2 {
+		font-size: 28px;
+	}
+}
+
+.name p,
+.text-user p {
+	color: #565959;
+	font-size: 16px;
+}
+
+.principal {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.countdown {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 28px;
+	color: #fff;
+}
+
+figure {
+	margin: 0 !important;
+}
+
+body {
+	font-family: sans-serif;
+}

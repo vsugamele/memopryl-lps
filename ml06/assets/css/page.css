@@ -1,0 +1,33 @@
+/* Enxugado para a ml05: as regras da grade de ofertas / selos / depoimentos
+   que viviam dentro do .esconder sairam junto com o markup. */
+
+body {
+		font-family: Jost;
+	}
+
+.text-white {
+		color: #fafafa !important;
+	}
+
+a.text-white:hover,
+	a.text-white:focus,
+	a.text-white.active {
+		color: #c7c7c7 !important;
+	}
+
+a,
+	a:hover {
+		color: #348d5a;
+	}
+
+blockquote {
+		border-color: #348d5a;
+	}
+
+body {
+		overflow-x: hidden;
+	}
+
+a {
+		transition: color 0.6s;
+	}
