@@ -68,6 +68,42 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 			.esconder {
 				display: none;
 			}
+
+			/* === Hard-override dos tamanhos dos ícones (v2 standalone) ===
+			   Em alguns deploys as CSS variables nao cascateiam ate os <svg>
+			   por causa de ordem de load / specificidade. Estas regras com
+			   !important + max-width/max-height blindam o layout. */
+			.elementor-widget .elementor-icon-list-icon svg,
+			.elementor-widget .elementor-icon-list-icon i {
+				height: 1em !important;
+				width: 1em !important;
+				max-width: 24px !important;
+				max-height: 24px !important;
+			}
+			.elementor-widget .elementor-icon svg,
+			.elementor-widget .elementor-icon i {
+				height: 1em !important;
+				width: 1em !important;
+				max-width: 24px !important;
+				max-height: 24px !important;
+			}
+			/* hamburger (24px) */
+			.elementor-element-175c56a0 .elementor-icon,
+			.elementor-element-175c56a0 .elementor-icon svg { font-size: 24px !important; }
+			/* angle-down More (14px) */
+			.elementor-element-a71d3ae .elementor-icon-list-icon svg { font-size: 14px !important; }
+			/* Watch (8px) */
+			.elementor-element-4606df10 .elementor-icon-list-icon svg { font-size: 8px !important; }
+			/* Listen (16px) */
+			.elementor-element-7f1c467a .elementor-icon-list-icon svg { font-size: 16px !important; }
+			/* search (18px) */
+			.elementor-element-2cef9e3e .elementor-icon,
+			.elementor-element-2cef9e3e .elementor-icon svg { font-size: 18px !important; }
+			/* cnn_icon image (46x22) */
+			.elementor-element-57925ac1 img { max-width: 46px !important; height: 22px !important; }
+			/* VSL placeholder: vira caixa com aspect ratio 9:16 em vez de padding 125% gigante */
+			vturb-smartplayer { max-width: 400px !important; width: 100% !important; }
+			.vturb-player-placeholder { padding: 177.77% 0 0 !important; max-width: 400px !important; }
 		</style>
 
 	</head>
