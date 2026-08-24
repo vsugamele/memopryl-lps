@@ -24,24 +24,24 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-		<link rel="stylesheet" id="hello-elementor-css" href="assets/css/reset.css?v=4" media="all">
-		<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend.min.css?v=4" media="all">
-		<link rel="stylesheet" id="widget-image-css" href="assets/css/widget-image.min.css?v=4" media="all">
-		<link rel="stylesheet" id="widget-heading-css" href="assets/css/widget-heading.min.css?v=4" media="all">
-		<link rel="stylesheet" id="widget-icon-list-css" href="assets/css/widget-icon-list.min.css?v=4" media="all">
-		<link rel="stylesheet" id="widget-divider-css" href="assets/css/widget-divider.min.css?v=4" media="all">
-		<link rel="stylesheet" id="elementor-post-1604-css" href="assets/css/post-1604.css?v=4" media="all">
+		<link rel="stylesheet" id="hello-elementor-css" href="assets/css/reset.css?v=5" media="all">
+		<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend.min.css?v=5" media="all">
+		<link rel="stylesheet" id="widget-image-css" href="assets/css/widget-image.min.css?v=5" media="all">
+		<link rel="stylesheet" id="widget-heading-css" href="assets/css/widget-heading.min.css?v=5" media="all">
+		<link rel="stylesheet" id="widget-icon-list-css" href="assets/css/widget-icon-list.min.css?v=5" media="all">
+		<link rel="stylesheet" id="widget-divider-css" href="assets/css/widget-divider.min.css?v=5" media="all">
+		<link rel="stylesheet" id="elementor-post-1604-css" href="assets/css/post-1604.css?v=5" media="all">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/page.css?v=4">
+		<link rel="stylesheet" type="text/css" href="assets/css/page.css?v=5">
 
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css?v=4">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css?v=5">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
 			integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=4">
-		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css?v=4">
-		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css?v=4">
-		<link rel="stylesheet" href="assets/css/dtc-cta.css?v=4">
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=5">
+		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css?v=5">
+		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css?v=5">
+		<link rel="stylesheet" href="assets/css/dtc-cta.css?v=5">
 		<!-- Custom CSS -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -65,96 +65,9 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 
 		<style>
-
-/* ============================================================
-   v3 INLINE FALLBACK -- v2 standalone deploy (ml05+ml06)
-   These rules cover the layout that the page breaks without.
-   If the external CSS files (assets/css/*.css) load, they
-   take precedence (cascade) and this block is harmless.
-   If they fail (CDN cache, deploy race, 404), the page
-   still has shape: header bar, h1, inline nav, body, etc.
-   ============================================================ */
-*,*::before,*::after{box-sizing:border-box}
-html{line-height:1.15;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;color:#333;background:#fff;overflow-x:hidden}
-
-/* Elementor containers / sections / columns -- the page only uses e-con */
-.e-con{--flex-direction:row;display:flex;flex-wrap:wrap;position:relative;width:100%;margin:0 auto;padding:0 10px}
-.e-con.e-flex{--flex-direction:row;flex-direction:var(--flex-direction)}
-.e-con.e-con-boxed{max-width:1140px}
-.e-con-full,.e-con>.e-con-inner{padding:0 10px;width:100%}
-.e-con.e-flex>.e-con-inner{display:flex;flex:1;flex-direction:inherit;flex-wrap:inherit;align-items:inherit;justify-content:inherit;gap:inherit;margin:0 auto;max-width:1140px;width:100%}
-
-/* Make the parent bar actually be a flex row -- the screenshot showed
-   everything stacking vertically because this was missing. */
-.e-con.e-flex.e-con-boxed.e-parent{align-items:center;justify-content:space-between}
-
-/* Widget wrapping */
-.elementor-widget{position:relative;width:100%}
-.elementor-widget-wrap{display:flex;flex-wrap:wrap;position:relative;width:100%;align-content:flex-start}
-
-/* Inline nav list (Life But Better / Fitness / Food / Sleep / More) */
-.elementor-icon-list-items.elementor-inline-items{display:flex;flex-wrap:wrap;align-items:center;list-style:none;margin:0;padding:0;gap:0 18px}
-.elementor-icon-list-item.elementor-inline-item{display:inline-flex;align-items:center;gap:6px}
-.elementor-icon-list-text{font-size:14px;line-height:1;color:#333}
-
-/* Icon list: kill the native <ul> disc that shows in the screenshot */
-ul.elementor-icon-list-items{list-style:none;padding-left:0}
-
-/* Elementor icon SVG -- the v2 !important override from 3c4449a */
-.elementor-widget .elementor-icon-list-icon svg,
-.elementor-widget .elementor-icon-list-icon i,
-.elementor-widget .elementor-icon svg,
-.elementor-widget .elementor-icon i{
-  height:1em!important;width:1em!important;
-  max-width:24px!important;max-height:24px!important
-}
-.elementor-icon{color:#69727d;display:inline-block;font-size:24px;line-height:1;text-align:center}
-.elementor-icon svg,.elementor-icon i{display:block;height:1em;width:1em;position:relative}
-
-/* Headings */
-.elementor-heading-title{line-height:1;margin:0;padding:0}
-h1,h2,h3,h4,h5,h6{margin:0 0 .5em;font-weight:500;line-height:1.2}
-.elementor-element h2.elementor-heading-title{font-size:18px;font-weight:700;color:#1f1f1f}
-
-/* Image */
-.elementor-widget-image img{max-width:100%;height:auto;border:0;display:inline-block;vertical-align:middle}
-img.attachment-full{width:auto;max-width:46px;height:auto}
-
-/* Sign-in button */
-.elementor-button{background-color:#69727d;border-radius:3px;color:#fff;display:inline-block;fill:#fff;font-size:13px;line-height:1;padding:10px 20px;text-align:center;text-decoration:none}
-.elementor-button:hover{color:#fff;opacity:.9}
-
-/* Heading + image group: keep them on the same row as a flex item */
-.e-con.e-flex .elementor-widget-image,
-.e-con.e-flex .elementor-widget-heading{display:inline-flex;align-items:center;margin-right:8px}
-
-/* Divider line under the header bar */
-.elementor-divider-separator{display:block;border-top:1px solid #ced4da;width:100%}
-
-/* Body text under the divider -- keep margins only, do NOT force font-size
-   here.  post-1604.css gives the widget div a 37px/700 styling that
-   inherits to <p id="dynamic-date">; if we set font-size on text-editor p
-   here it overrides that inheritance and the headline shrinks to 16px. */
-.elementor-widget-text-editor p{margin:0 0 1em;line-height:1.5}
-#dynamic-date{font-size:32px;font-weight:700;line-height:1.2;text-align:left;margin:0 0 16px;color:#000;font-family:"Roboto","Helvetica Neue",Arial,sans-serif}
-
-/* VSL player wrapper */
-vturb-smartplayer{display:block;margin:0 auto;width:100%;max-width:400px}
-.vturb-player-placeholder{position:relative;width:100%;padding:177.77% 0 0;background-color:#000;z-index:0}
-
-/* Hide the .esconder block until the VSL reveal -- keep its content from
-   flashing visible at the top of the page during the first paint */
-.esconder{display:none}
-
-/* ============================================================
-   END v3 INLINE FALLBACK
-   ============================================================ */
-
 			.esconder {
-				display: none;
+					display: none;
 			}
-
 			/* === Hard-override dos tamanhos dos ícones (v2 standalone) ===
 			   Em alguns deploys as CSS variables nao cascateiam ate os <svg>
 			   por causa de ordem de load / specificidade. Estas regras com
