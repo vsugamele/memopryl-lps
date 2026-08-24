@@ -105,9 +105,12 @@ img.attachment-full{width:auto;max-width:46px;height:auto}
 /* Divider line under the header bar */
 .elementor-divider-separator{display:block;border-top:1px solid #ced4da;width:100%}
 
-/* Body text under the divider */
-.elementor-widget-text-editor p{margin:0 0 1em;font-size:16px;line-height:1.5}
-#dynamic-date{text-align:left}
+/* Body text under the divider -- keep margins only, do NOT force font-size
+   here.  post-1604.css gives the widget div a 37px/700 styling that
+   inherits to <p id="dynamic-date">; if we set font-size on text-editor p
+   here it overrides that inheritance and the headline shrinks to 16px. */
+.elementor-widget-text-editor p{margin:0 0 1em;line-height:1.5}
+#dynamic-date{font-size:32px;font-weight:700;line-height:1.2;text-align:left;margin:0 0 16px;color:#000;font-family:"Roboto","Helvetica Neue",Arial,sans-serif}
 
 /* VSL player wrapper */
 vturb-smartplayer{display:block;margin:0 auto;width:100%;max-width:400px}
