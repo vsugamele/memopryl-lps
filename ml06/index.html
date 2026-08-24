@@ -24,24 +24,24 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-		<link rel="stylesheet" id="hello-elementor-css" href="assets/css/reset.css?v=8" media="all">
-		<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend.min.css?v=8" media="all">
-		<link rel="stylesheet" id="widget-image-css" href="assets/css/widget-image.min.css?v=8" media="all">
-		<link rel="stylesheet" id="widget-heading-css" href="assets/css/widget-heading.min.css?v=8" media="all">
-		<link rel="stylesheet" id="widget-icon-list-css" href="assets/css/widget-icon-list.min.css?v=8" media="all">
-		<link rel="stylesheet" id="widget-divider-css" href="assets/css/widget-divider.min.css?v=8" media="all">
-		<link rel="stylesheet" id="elementor-post-1604-css" href="assets/css/post-1604.css?v=8" media="all">
+		<link rel="stylesheet" id="hello-elementor-css" href="assets/css/reset.css?v=10" media="all">
+		<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend.min.css?v=10" media="all">
+		<link rel="stylesheet" id="widget-image-css" href="assets/css/widget-image.min.css?v=10" media="all">
+		<link rel="stylesheet" id="widget-heading-css" href="assets/css/widget-heading.min.css?v=10" media="all">
+		<link rel="stylesheet" id="widget-icon-list-css" href="assets/css/widget-icon-list.min.css?v=10" media="all">
+		<link rel="stylesheet" id="widget-divider-css" href="assets/css/widget-divider.min.css?v=10" media="all">
+		<link rel="stylesheet" id="elementor-post-1604-css" href="assets/css/post-1604.css?v=10" media="all">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/page.css?v=8">
+		<link rel="stylesheet" type="text/css" href="assets/css/page.css?v=10">
 
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css?v=8">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css?v=10">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
 			integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=8">
-		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css?v=8">
-		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css?v=8">
-		<link rel="stylesheet" href="assets/css/dtc-cta.css?v=8">
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=10">
+		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css?v=10">
+		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css?v=10">
+		<link rel="stylesheet" href="assets/css/dtc-cta.css?v=10">
 		<!-- Custom CSS -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -68,6 +68,16 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 			.esconder {
 				display: none;
 			}
+			/* Standalone Vercel fix v10: re-add hard-override for SVG icon sizing (canonical lost --e-icon-list-icon-size cascade in standalone context) */
+			.elementor-widget .elementor-icon-list-icon svg { max-width: 24px !important; max-height: 24px !important; }
+			.elementor-icon-list-icon svg { width: 1em !important; height: 1em !important; }
+			.elementor-icon { font-size: 24px !important; }
+			.elementor-icon-list-icon { font-size: 16px !important; }
+			.e-font-icon-svg { fill: currentColor; width: 1em !important; height: 1em !important; }
+			/* cnn icon */
+			img[src*='cnn_icon'] { max-width: 46px !important; height: 22px !important; }
+			/* VSL 9:16 */
+			.vturb-player-placeholder { padding: 177.77% 0 0 !important; max-width: 400px !important; }
 		</style>
 
 	</head>
@@ -97,7 +107,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 							data-e-type="container">
 							<div class="elementor-element elementor-element-57925ac1 elementor-widget elementor-widget-image" data-id="57925ac1" data-element_type="widget"
 								data-e-type="widget" data-widget_type="image.default">
-								<img decoding="async" width="46" height="22" src="assets/img/gerais/cnn_icon.png?v=8"
+								<img decoding="async" width="46" height="22" src="assets/img/gerais/cnn_icon.png?v=10"
 									class="attachment-full size-full wp-image-1606" alt="" draggable="false">
 							</div>
 							<div class="elementor-element elementor-element-deb042e elementor-widget elementor-widget-heading" data-id="deb042e" data-element_type="widget"
@@ -271,7 +281,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 								<!-- Comentário 1 -->
 								<div class="comment" data-comment-id="1">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/015.jpg?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/015.jpg?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Hannah Cooper</p>
@@ -289,7 +299,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment " data-comment-id="1b">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/011.jpg?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/011.jpg?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Robert Hayes</p>
@@ -309,7 +319,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment answer" data-comment-id="1c">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/019.jpg?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/019.jpg?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Stephen Carter</p>
@@ -331,7 +341,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 								<!-- Comentário 2 -->
 								<div class="comment" data-comment-id="2">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Natalie Parker</p>
@@ -346,7 +356,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment answer" data-comment-id="2a">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/043.png?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/043.png?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Jacob Morgan</p>
@@ -364,7 +374,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment answer" data-comment-id="2b">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Natalie Parker</p>
@@ -383,7 +393,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 								<!-- Comentário 3 -->
 								<div class="comment" data-comment-id="3">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/045.png?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/045.png?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Samantha Edwards</p>
@@ -404,7 +414,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 
 								<div class="comment " data-comment-id="6c">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/020.jpg?v=8" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/020.jpg?v=10" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Jessica Reeves</p>
