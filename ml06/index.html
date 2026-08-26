@@ -24,24 +24,24 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-		<link rel="stylesheet" id="hello-elementor-css" href="assets/css/reset.css?v=12" media="all">
-		<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend.min.css?v=12" media="all">
-		<link rel="stylesheet" id="widget-image-css" href="assets/css/widget-image.min.css?v=12" media="all">
-		<link rel="stylesheet" id="widget-heading-css" href="assets/css/widget-heading.min.css?v=12" media="all">
-		<link rel="stylesheet" id="widget-icon-list-css" href="assets/css/widget-icon-list.min.css?v=12" media="all">
-		<link rel="stylesheet" id="widget-divider-css" href="assets/css/widget-divider.min.css?v=12" media="all">
-		<link rel="stylesheet" id="elementor-post-1604-css" href="assets/css/post-1604.css?v=12" media="all">
+		<link rel="stylesheet" id="hello-elementor-css" href="assets/css/reset.css?v=13" media="all">
+		<link rel="stylesheet" id="elementor-frontend-css" href="assets/css/frontend.min.css?v=13" media="all">
+		<link rel="stylesheet" id="widget-image-css" href="assets/css/widget-image.min.css?v=13" media="all">
+		<link rel="stylesheet" id="widget-heading-css" href="assets/css/widget-heading.min.css?v=13" media="all">
+		<link rel="stylesheet" id="widget-icon-list-css" href="assets/css/widget-icon-list.min.css?v=13" media="all">
+		<link rel="stylesheet" id="widget-divider-css" href="assets/css/widget-divider.min.css?v=13" media="all">
+		<link rel="stylesheet" id="elementor-post-1604-css" href="assets/css/post-1604.css?v=13" media="all">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/page.css?v=12">
+		<link rel="stylesheet" type="text/css" href="assets/css/page.css?v=13">
 
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css?v=12">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css?v=13">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
 			integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=12">
-		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css?v=12">
-		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css?v=12">
-		<link rel="stylesheet" href="assets/css/dtc-cta.css?v=12">
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css?v=13">
+		<link rel="stylesheet" type="text/css" href="assets/css/fbcomments.css?v=13">
+		<link rel="stylesheet" type="text/css" href="assets/css/vsl.css?v=13">
+		<link rel="stylesheet" href="assets/css/dtc-cta.css?v=13">
 		<!-- Custom CSS -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -64,71 +64,14 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 
 
-		<style>
-			.esconder {
-				display: none;
-			}
-			/* Standalone Vercel fix v12: layout column vertical no top-level + CNN icon bigger + Sign In button border */
-			/* 1. TOP-LEVEL .elementor-1604 (page wrapper) - COLUMN so children stack */
-			.elementor-1604 { display: flex !important; flex-direction: column !important; }
-			/* 2. ELEMENTOR CORE FLEX */
-			.e-con { display: flex; }
-			.e-con-inner { display: flex; flex-grow: 1; max-width: 1140px; width: 100%; margin: 0 auto; }
-			.e-con.e-con-boxed { max-width: 1140px; margin: 0 auto; }
-			.elementor-widget-wrap { display: flex; }
-			.elementor-widget { width: 100%; }
-			/* 3. TOP NAV BAR: 5392c4cc (row: left group | right group) */
-			.elementor-element-5392c4cc { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; padding: 8px 24px !important; background: #fff; border-bottom: 1px solid #ccc; max-width: 100% !important; }
-			.elementor-element-5392c4cc .e-con-inner { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; max-width: 1280px !important; flex-grow: 0 !important; }
-			/* 4. LEFT GROUP: hamburger + CNN + Health (23f3cc6) */
-			.elementor-element-23f3cc6 { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 12px !important; flex: 1 1 auto !important; }
-			/* 5. RIGHT GROUP: Watch + Listen + Search + Sign In (4c50c70) */
-			.elementor-element-4c50c70 { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 16px !important; flex: 0 0 auto !important; }
-			/* 6. ICON LIST: layout-inline = horizontal */
-			.elementor-icon-list-items.elementor-inline-items { display: flex !important; flex-direction: row !important; align-items: center !important; list-style: none !important; padding: 0 !important; margin: 0 !important; gap: 16px !important; }
-			.elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item { display: flex !important; flex-direction: row !important; align-items: center !important; }
-			/* 7. CNN icon - size up */
-			img[src*='cnn_icon'] { max-width: 70px !important; height: auto !important; display: block !important; visibility: visible !important; opacity: 1 !important; }
-			.elementor-element-57925ac1 img { max-width: 70px !important; height: auto !important; }
-			/* 8. HEADINGS */
-			.elementor-heading-title { line-height: 1.2; font-weight: 700; margin: 0; padding: 0; }
-			h1.elementor-heading-title { font-size: 32px; }
-			.elementor-element-deb042e .elementor-heading-title { font-size: 18px !important; font-weight: 700 !important; }
-			/* 9. H1 date (Bill Gates title) */
-			#dynamic-date { font-size: 32px !important; font-weight: 700 !important; line-height: 1.2 !important; margin: 24px 0 16px 0 !important; color: #000 !important; max-width: 800px !important; }
-			/* 10. TITLE container (69d7b32) - column with max-width */
-			.elementor-element-69d7b32 { max-width: 900px !important; margin: 0 auto !important; padding: 0 20px !important; flex-direction: column !important; }
-			/* 11. VSL container (3b5de92) - center */
-			.elementor-element-3b5de92 { display: flex !important; justify-content: center !important; margin: 24px auto !important; max-width: 400px !important; }
-			.elementor-element-59d63d2 { max-width: 400px !important; margin: 0 auto !important; }
-			.vturb-player-placeholder { padding: 177.77% 0 0 0 !important; max-width: 400px !important; width: 100% !important; }
-			vturb-smartplayer { max-width: 400px !important; display: block; margin: 0 auto; }
-			/* 12. Sign In as button */
-			.elementor-element-3b5de92 a, .elementor-element-3b5de92 .elementor-button { background: #fff !important; color: #1f1f1f !important; border: 1px solid #ccc !important; border-radius: 4px !important; padding: 6px 16px !important; font-size: 14px !important; text-decoration: none !important; }
-			/* 13. COMMENTS section */
-			.elementor-element-7c3bcbf { padding: 40px 20px !important; max-width: 800px !important; margin: 0 auto !important; }
-			.elementor-element-3eff92b p { font-size: 18px; margin: 0 0 20px 0; }
-			.fb-comments, .fb-comment { display: block; }
-			/* 14. SVG icon size */
-			.elementor-widget .elementor-icon-list-icon svg { max-width: 24px !important; max-height: 24px !important; }
-			.elementor-icon-list-icon svg { width: 1em !important; height: 1em !important; }
-			.elementor-icon { font-size: 20px !important; }
-			.elementor-icon-list-icon { font-size: 16px !important; }
-			.e-font-icon-svg { fill: currentColor; width: 1em !important; height: 1em !important; }
-			/* 15. Watch red dot - circle */
-			.elementor-element-4606df1 .elementor-icon-list-icon { color: #cc0000 !important; }
-			/* 16. Body */
-			body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1f1f1f; background: #fff; }
-			/* 17. Border line under nav */
-			.elementor-element-1d8c3ad { border-top: 1px solid #e0e0e0; margin-top: 0; }
-		</style>
+		
 
 	</head>
 
 	<body
 		class="wp-singular page-template page-template-elementor_canvas page page-id-1604 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-1604 e--ua-blink e--ua-chrome e--ua-webkit"
 		data-elementor-device-mode="desktop" cz-shortcut-listen="true">
-		<div data-elementor-type="wp-page" data-elementor-id="1604" class="elementor elementor-1604" data-elementor-post-type="page">
+		<div data-elementor-type="wp-page" data-elementor-id="1604" class="elementor elementor-1604" data-elementor-post-type="page" style="display: flex !important; flex-direction: column !important; align-items: stretch !important; width: 100% !important; max-width: 100% !important;">
 			<div class="elementor-element elementor-element-5392c4cc e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="5392c4cc" data-element_type="container"
 				data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="e-con-inner">
@@ -150,7 +93,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 							data-e-type="container">
 							<div class="elementor-element elementor-element-57925ac1 elementor-widget elementor-widget-image" data-id="57925ac1" data-element_type="widget"
 								data-e-type="widget" data-widget_type="image.default">
-								<img decoding="async" width="46" height="22" src="assets/img/gerais/cnn_icon.png?v=12"
+								<img decoding="async" width="46" height="22" src="assets/img/gerais/cnn_icon.png?v=13"
 									class="attachment-full size-full wp-image-1606" alt="" draggable="false">
 							</div>
 							<div class="elementor-element elementor-element-deb042e elementor-widget elementor-widget-heading" data-id="deb042e" data-element_type="widget"
@@ -324,7 +267,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 								<!-- Comentário 1 -->
 								<div class="comment" data-comment-id="1">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/015.jpg?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/015.jpg?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Hannah Cooper</p>
@@ -342,7 +285,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment " data-comment-id="1b">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/011.jpg?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/011.jpg?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Robert Hayes</p>
@@ -362,7 +305,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment answer" data-comment-id="1c">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/019.jpg?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/019.jpg?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Stephen Carter</p>
@@ -384,7 +327,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 								<!-- Comentário 2 -->
 								<div class="comment" data-comment-id="2">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Natalie Parker</p>
@@ -399,7 +342,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment answer" data-comment-id="2a">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/043.png?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/masculinos60/043.png?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Jacob Morgan</p>
@@ -417,7 +360,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 								</div>
 
 								<div class="comment answer" data-comment-id="2b">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/046.png?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Natalie Parker</p>
@@ -436,7 +379,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 								<!-- Comentário 3 -->
 								<div class="comment" data-comment-id="3">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/045.png?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/045.png?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Samantha Edwards</p>
@@ -457,7 +400,7 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 
 
 								<div class="comment " data-comment-id="6c">
-									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/020.jpg?v=12" alt="">
+									<img decoding="async" class="user-avatar" src="assets/img/comentarios/femininos60/020.jpg?v=13" alt="">
 									<div class="comment-data">
 										<div class="user">
 											<p class="name">Jessica Reeves</p>
@@ -668,6 +611,64 @@ src="https://www.facebook.com/tr?id=856208354241525&ev=PageView&noscript=1"
 		  </script>
 
 
-	</body>
+	<style>
+			.esconder {
+				display: none;
+			}
+			/* Standalone Vercel fix v12: layout column vertical no top-level + CNN icon bigger + Sign In button border */
+			/* 1. TOP-LEVEL .elementor-1604 (page wrapper) - COLUMN so children stack */
+			.elementor-1604 { display: flex !important; flex-direction: column !important; }
+			/* 2. ELEMENTOR CORE FLEX */
+			.e-con { display: flex; }
+			.e-con-inner { display: flex; flex-grow: 1; max-width: 1140px; width: 100%; margin: 0 auto; }
+			.e-con.e-con-boxed { max-width: 1140px; margin: 0 auto; }
+			.elementor-widget-wrap { display: flex; }
+			.elementor-widget { width: 100%; }
+			/* 3. TOP NAV BAR: 5392c4cc (row: left group | right group) */
+			.elementor-element-5392c4cc { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; padding: 8px 24px !important; background: #fff; border-bottom: 1px solid #ccc; max-width: 100% !important; }
+			.elementor-element-5392c4cc .e-con-inner { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; max-width: 1280px !important; flex-grow: 0 !important; }
+			/* 4. LEFT GROUP: hamburger + CNN + Health (23f3cc6) */
+			.elementor-element-23f3cc6 { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 12px !important; flex: 1 1 auto !important; }
+			/* 5. RIGHT GROUP: Watch + Listen + Search + Sign In (4c50c70) */
+			.elementor-element-4c50c70 { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 16px !important; flex: 0 0 auto !important; }
+			/* 6. ICON LIST: layout-inline = horizontal */
+			.elementor-icon-list-items.elementor-inline-items { display: flex !important; flex-direction: row !important; align-items: center !important; list-style: none !important; padding: 0 !important; margin: 0 !important; gap: 16px !important; }
+			.elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item { display: flex !important; flex-direction: row !important; align-items: center !important; }
+			/* 7. CNN icon - size up */
+			img[src*='cnn_icon'] { max-width: 70px !important; height: auto !important; display: block !important; visibility: visible !important; opacity: 1 !important; }
+			.elementor-element-57925ac1 img { max-width: 70px !important; height: auto !important; }
+			/* 8. HEADINGS */
+			.elementor-heading-title { line-height: 1.2; font-weight: 700; margin: 0; padding: 0; }
+			h1.elementor-heading-title { font-size: 32px; }
+			.elementor-element-deb042e .elementor-heading-title { font-size: 18px !important; font-weight: 700 !important; }
+			/* 9. H1 date (Bill Gates title) */
+			#dynamic-date { font-size: 32px !important; font-weight: 700 !important; line-height: 1.2 !important; margin: 24px 0 16px 0 !important; color: #000 !important; max-width: 800px !important; }
+			/* 10. TITLE container (69d7b32) - column with max-width */
+			.elementor-element-69d7b32 { max-width: 900px !important; margin: 0 auto !important; padding: 0 20px !important; flex-direction: column !important; }
+			/* 11. VSL container (3b5de92) - center */
+			.elementor-element-3b5de92 { display: flex !important; justify-content: center !important; margin: 24px auto !important; max-width: 400px !important; }
+			.elementor-element-59d63d2 { max-width: 400px !important; margin: 0 auto !important; }
+			.vturb-player-placeholder { padding: 177.77% 0 0 0 !important; max-width: 400px !important; width: 100% !important; }
+			vturb-smartplayer { max-width: 400px !important; display: block; margin: 0 auto; }
+			/* 12. Sign In as button */
+			.elementor-element-3b5de92 a, .elementor-element-3b5de92 .elementor-button { background: #fff !important; color: #1f1f1f !important; border: 1px solid #ccc !important; border-radius: 4px !important; padding: 6px 16px !important; font-size: 14px !important; text-decoration: none !important; }
+			/* 13. COMMENTS section */
+			.elementor-element-7c3bcbf { padding: 40px 20px !important; max-width: 800px !important; margin: 0 auto !important; }
+			.elementor-element-3eff92b p { font-size: 18px; margin: 0 0 20px 0; }
+			.fb-comments, .fb-comment { display: block; }
+			/* 14. SVG icon size */
+			.elementor-widget .elementor-icon-list-icon svg { max-width: 24px !important; max-height: 24px !important; }
+			.elementor-icon-list-icon svg { width: 1em !important; height: 1em !important; }
+			.elementor-icon { font-size: 20px !important; }
+			.elementor-icon-list-icon { font-size: 16px !important; }
+			.e-font-icon-svg { fill: currentColor; width: 1em !important; height: 1em !important; }
+			/* 15. Watch red dot - circle */
+			.elementor-element-4606df1 .elementor-icon-list-icon { color: #cc0000 !important; }
+			/* 16. Body */
+			body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1f1f1f; background: #fff; }
+			/* 17. Border line under nav */
+			.elementor-element-1d8c3ad { border-top: 1px solid #e0e0e0; margin-top: 0; }
+		</style>
+</body>
 
 </html>
