@@ -376,19 +376,38 @@ h1.headline {
 
   </section>
 </main>
-<div class="vsl-wrap">
-  <vturb-smartplayer id="vid-6a861a1547d51ee75a3b9c97"></vturb-smartplayer>
-</div>
+<div class="vsl-wrap" id="vsl-mount"></div>
 
 <!-- Vturb smartplayer -->
-<script defer src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    if (typeof Smartplayer !== 'undefined') {
-      try { Smartplayer.init(); } catch(e) { console.warn('Smartplayer init:', e); }
-    }
-  });
-</script>
 
+<!-- Vturb Smartplayer: lazy mount AFTER all images decoded -->
+<script>
+window.addEventListener('load', function() {
+  // Aguarda próximo tick + Promise.all das imagens
+  var imgs = Array.prototype.slice.call(document.images);
+  var pending = imgs.filter(function(i){ return !i.complete; });
+  var done = function() {
+    setTimeout(function() {
+      // Carrega o smartplayer.js
+      var s = document.createElement('script');
+      s.src = 'https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js';
+      s.onload = function() {
+        // Cria o custom element DEPOIS do decode
+        var p = document.createElement('vturb-smartplayer');
+        p.setAttribute('id', 'vid-6a861a1547d51ee75a3b9c97');
+        var mount = document.getElementById('vsl-mount');
+        if (mount) mount.appendChild(p);
+      };
+      document.body.appendChild(s);
+    }, 50);
+  };
+  if (pending.length === 0) { done(); return; }
+  var loaded = 0;
+  pending.forEach(function(img) {
+    img.addEventListener('load', function() { if (++loaded === pending.length) done(); });
+    img.addEventListener('error', function() { if (++loaded === pending.length) done(); });
+  });
+});
+</script>
 </body>
 </html>
