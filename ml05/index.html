@@ -670,15 +670,25 @@
         cnnText.style.padding = '4px 6px';
         cnnImg.parentNode.replaceChild(cnnText, cnnImg);
       }
-      // Enlarge comment avatars
+      // Enlarge comment avatars - force full size with !important
       var avatars = document.querySelectorAll('.user-avatar');
       avatars.forEach(function(av){
-        av.style.width = '52px';
-        av.style.height = '52px';
-        av.style.borderRadius = '50%';
-        av.style.objectFit = 'cover';
-        av.style.border = '2px solid #e4e6eb';
+        av.style.setProperty('width', '52px', 'important');
+        av.style.setProperty('height', '52px', 'important');
+        av.style.setProperty('min-width', '52px', 'important');
+        av.style.setProperty('min-height', '52px', 'important');
+        av.style.setProperty('max-width', '52px', 'important');
+        av.style.setProperty('max-height', '52px', 'important');
+        av.style.setProperty('border-radius', '50%', 'important');
+        av.style.setProperty('object-fit', 'cover', 'important');
+        av.style.setProperty('display', 'block', 'important');
+        av.style.setProperty('visibility', 'visible', 'important');
+        av.style.setProperty('opacity', '1', 'important');
+        av.style.setProperty('border', '2px solid #e4e6eb', 'important');
       });
+      // HIDE the icon list (Life, But Better / Fitness / etc) - not in canonical CNN Health design
+      var iconList = document.querySelector('[data-id="a71d3ae"]');
+      if(iconList) iconList.style.setProperty('display', 'none', 'important');
     } catch(e) { console.error('Layout fix error: ' + e.message); }
   }
   if(document.readyState === 'loading'){
