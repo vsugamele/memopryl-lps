@@ -376,38 +376,16 @@ h1.headline {
 
   </section>
 </main>
-<div class="vsl-wrap" id="vsl-mount"></div>
+<div class="vsl-wrap">
+  <iframe src="https://app.vturb.com/embed/6a861a1547d51ee75a3b9c97?v=31" 
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" 
+          allow="autoplay; encrypted-media; fullscreen" 
+          allowfullscreen 
+          loading="lazy" 
+          title="VSL"></iframe>
+</div>
 
 <!-- Vturb smartplayer -->
 
-<!-- Vturb Smartplayer: lazy mount AFTER all images decoded -->
-<script>
-window.addEventListener('load', function() {
-  // Aguarda próximo tick + Promise.all das imagens
-  var imgs = Array.prototype.slice.call(document.images);
-  var pending = imgs.filter(function(i){ return !i.complete; });
-  var done = function() {
-    setTimeout(function() {
-      // Carrega o smartplayer.js
-      var s = document.createElement('script');
-      s.src = 'https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js';
-      s.onload = function() {
-        // Cria o custom element DEPOIS do decode
-        var p = document.createElement('vturb-smartplayer');
-        p.setAttribute('id', 'vid-6a861a1547d51ee75a3b9c97');
-        var mount = document.getElementById('vsl-mount');
-        if (mount) mount.appendChild(p);
-      };
-      document.body.appendChild(s);
-    }, 50);
-  };
-  if (pending.length === 0) { done(); return; }
-  var loaded = 0;
-  pending.forEach(function(img) {
-    img.addEventListener('load', function() { if (++loaded === pending.length) done(); });
-    img.addEventListener('error', function() { if (++loaded === pending.length) done(); });
-  });
-});
-</script>
 </body>
 </html>
