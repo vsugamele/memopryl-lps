@@ -137,10 +137,9 @@ h1.headline {
   background: #000;
   border-radius: 6px;
   overflow: hidden;
-  aspect-ratio: 9 / 16;
   position: relative;
 }
-.vsl-wrap vturb-smartplayer { display: block; width: 100%; height: 100%; }
+
 
 /* === COMMENTS === */
 .comments { margin-top: 56px; }
@@ -377,12 +376,8 @@ h1.headline {
   </section>
 </main>
 <div class="vsl-wrap">
-  <iframe src="https://app.vturb.com/embed/6a861a1547d51ee75a3b9c97?v=31" 
-          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" 
-          allow="autoplay; encrypted-media; fullscreen" 
-          allowfullscreen 
-          loading="lazy" 
-          title="VSL"></iframe>
+  <vturb-smartplayer id="vid-6a8726701ed476621617a292" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 125% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
+  <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/40842bbe-bbd8-4eb5-aac6-ee6da1d154b6/players/6a8726701ed476621617a292/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
 </div>
 
 <!-- Vturb smartplayer -->
